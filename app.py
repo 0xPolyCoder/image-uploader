@@ -15,10 +15,12 @@ ALLOWED_IMAGE_TYPES = {'png', 'jpg', 'jpeg', 'gif'}
 
 # The presence of the WHITELISTED_IP environment variable enables IP checking
 WHITELISTED_IP = os.getenv('WHITELISTED_IP') # If this variable is not set, the IP whitelist is disabled
+
+logging.basicConfig(level=logging.INFO)
 if WHITELISTED_IP:
-    app.logger.info(f"IP Whitelisting is ENABLED for IP: {WHITELISTED_IP}")
+    logging.info(f"IP Whitelisting is ENABLED for IP: {WHITELISTED_IP}")
 else:
-    app.logger.info("IP Whitelisting is DISABLED. The app is publicly accessible.")
+    logging.info("IP Whitelisting is DISABLED. The app is publicly accessible.")
 
 app = Flask(__name__)
 
