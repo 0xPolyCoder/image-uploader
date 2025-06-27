@@ -15,7 +15,7 @@ A simple, secure web application for uploading, viewing, and deleting images, bu
 
 ## Live Demo
 
-[https://image-uploader-y9i0.onrender.com/]
+https://image-uploader-y9i0.onrender.com/
 
 ## Tech Stack
 
