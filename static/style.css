@@ -1,0 +1,65 @@
+body { 
+    font-family: sans-serif; 
+    margin: 2em; 
+    background-color: #f4f4f9; 
+}
+
+.container { 
+    max-width: 800px; 
+    margin: auto; 
+    background: white; 
+    padding: 2em; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+h1, h2 { 
+    color: #333; 
+}
+
+.upload-form { 
+    margin-bottom: 2em; 
+    padding: 1em; 
+    border: 1px dashed #ccc; 
+    border-radius: 4px; 
+}
+
+.image-gallery { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 1em; 
+}
+
+.image-item { 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    padding: 0.5em; 
+    text-align: center; 
+}
+
+.image-item img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+
+.image-item p { 
+    word-wrap: break-word; 
+    font-size: 0.8em; 
+    margin: 0.5em 0; 
+}
+
+.delete-btn { 
+    background-color: #e74c3c; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-size: 0.9em; 
+}
+
+.delete-btn:hover { 
+    background-color: #c0392b; 
+}

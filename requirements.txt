@@ -1,0 +1,4 @@
+Flask
+filetype
+gunicorn
+whitenoise
